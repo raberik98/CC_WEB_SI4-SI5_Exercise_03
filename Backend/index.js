@@ -1,8 +1,9 @@
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
+const cors = require("cors")
 app.use(express.json())
-
+app.use(cors())
 
 //OPTIONAL TASK
 //-----------------------------------------------------------------------------
@@ -25,6 +26,10 @@ app.use(express.json())
 //     res.send(ipAddress);
 // })
 //-----------------------------------------------------------------------------
+
+app.get("/", (req,res) => {
+    res.json({"data": ["beer1","beer2","beer3"]})
+})
 
 
 
