@@ -35,7 +35,7 @@ app.get("/", (req,res) => {
 
 
 
-mongoose.connect("mongodb://localhost:27017/cheapBeer").then(() => {
+mongoose.connect("mongodb://127.0.0.1:27017/cheapBeer").then(() => {
     console.log("Connection to MongoDB database!");
     app.listen(3001, () => {
         console.log("App is running at port: 3001");
