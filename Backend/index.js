@@ -10,30 +10,20 @@ app.use(cors())
 // let currentRequests = 0
 // let requestLimit = 100
 
-// setInterval(() => {
-//     console.log("REQUEST COUNTER RESET!")
-//     currentRequests = 0
-// }, 60000)
-
-// app.use("/", (dog,cat,beer) => {
-//     currentRequests++
-//     console.log(`Server can handle this amount of extra requests: ${requestLimit - currentRequests}`);
-//     beer()
+// app.use("/", (リクエスト, 応答, 次) => {
+//     const ipAddress = リクエスト.socket.remoteAddress;
+//     次()
 // })
 
-// app.get("/", (req,res) => {
-//     const ipAddress = req.socket.remoteAddress;
-//     res.send(ipAddress);
-// })
 //-----------------------------------------------------------------------------
 
+
+
+
+
 app.get("/", (req,res) => {
-    res.json({"data": ["beer1","beer2","beer3"]})
+    res.send("I am just an endpoint don't mind me.")
 })
-
-
-
-
 
 mongoose.connect("mongodb://127.0.0.1:27017/cheapBeer").then(() => {
     console.log("Connection to MongoDB database!");
