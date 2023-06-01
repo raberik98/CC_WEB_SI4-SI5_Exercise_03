@@ -3,6 +3,6 @@ export default function unknown() {
         fetch("http://localhost:3001/").then((resp) => {
             resp.text().then(data => console.log(data)) 
         } )
-    },200)
+    },500)
    
 }
