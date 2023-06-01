@@ -50,7 +50,9 @@ Note: The React frontend wasn't created with the usual create-react-app, instead
 
 5, On the backend let's make a middleware which will check potential rank ups after every purchase, rank ups can be based on the company balance. If the company ordered more than 100000 HUF worth of beer than it will reach "Trusted Company" rank and after 1000000 HUF it will reach "Trusted Regular" rank which is the highest and should be awarded with 10 from each beer type for free.
 
-6, The in the backend side, the index.js also includes an incomplete feature, we want our site to have a limit to how many requests it as allowed to handle at a time, currently this limit is capped at 100, let's complete this feature where the server will only take 100 requests/minute. Try to track how many requests have came in so far and be sure to reset it after every minute. If the server receives more requests than the limit than immidietly send back an error message, signalling that too much requests came in. Use middleweres for this task.
+6, The in the backend side, the index.js also includes an incomplete feature, we want our site to have a limit to how many requests it as allowed to handle at a time, currently this limit is capped at 100, let's complete this feature where the server will only take 100 requests/minute. Try to track how many requests have came in so far and be sure to reset it after every minute. If the server receives more requests than the limit than immidietly send back an error message, signalling that too much requests came in.
+Use middleweres for this task.
+The previous developper unfortunetly left some hard to understand code behind, can you make it more readable?
 
 7, A unknown individual hid some malicious code somewhere in the project that can interract with the previous feature in a negative way, find out what is going on and solve the issue.
 
