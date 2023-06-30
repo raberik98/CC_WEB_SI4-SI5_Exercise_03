@@ -1,9 +1,7 @@
-const express = require("express")
+import express from "express"
+import mongoose from "mongoose"
 const app = express()
-const mongoose = require("mongoose")
-const cors = require("cors")
 app.use(express.json())
-app.use(cors())
 
 //OPTIONAL TASK
 //-----------------------------------------------------------------------------

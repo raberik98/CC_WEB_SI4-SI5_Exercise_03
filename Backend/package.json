@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express.js": "^1.0.0",
     "mongoose": "^7.0.1"
   },
+  "type": "module",
   "devDependencies": {
     "nodemon": "^2.0.21"
   }
