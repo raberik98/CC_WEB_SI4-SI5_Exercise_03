@@ -19,6 +19,7 @@ app.use((req,res,next) => {
 
 // app.use("/", (リクエスト, 応答, 次) => {
 //     const ipAddress = リクエスト.socket.remoteAddress;
+//     console.log(ipAddress)
 //     次()
 // })
 

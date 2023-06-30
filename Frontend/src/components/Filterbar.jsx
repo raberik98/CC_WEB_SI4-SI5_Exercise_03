@@ -6,9 +6,6 @@ export default function Filterbar() {
         <div className="navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <button className="nav-link active">Beername</button>
-            </li>
-            <li className="nav-item">
               <button className="nav-link active">Alcohol %</button>
             </li>
             <li className="nav-item">

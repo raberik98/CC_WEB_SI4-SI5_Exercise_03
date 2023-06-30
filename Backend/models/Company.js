@@ -15,11 +15,14 @@ const CompanySchema = new mongoose.Schema({
   },
   orders: {
     type: [{
-        beerName: String,
-        beerAlcohol: Number,
-        beerPrice: Number
+      amount: Number,
+      ID: String
     }],
     default: []
+  },
+  balance: {
+    type: Number,
+    default: 0
   }
 });
 
